@@ -19,10 +19,10 @@ pub fn recognize(
     let base64 = format!("data:image/png;base64,{}", base64);
     let mut form_data = HashMap::new();
     form_data.insert("base64Image", base64);
-    form_data.insert("OCREngine", "2".to_string());
+    // form_data.insert("OCREngine", "2".to_string());
 
     let res: Value = client
-        .post("https://api.ocr.space/parse/image")
+        .post("http://172.22.96.143:8502/api")
         .header("apikey", apikey)
         .header("content-type", "application/x-www-form-urlencoded")
         .form(&form_data)

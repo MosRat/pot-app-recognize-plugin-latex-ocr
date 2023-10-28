@@ -1,10 +1,16 @@
 {
-  "id": "[plugin].com.pot-app.ocrspace",
+  "id": "[plugin].com.pot-app.latexocr",
   "plugin_type": "recognize",
   "icon": "icon.png",
-  "display": "OCR Space",
-  "homepage": "https://github.com/pot-app/pot-app-recognize-plugin-template",
-  "needs": [{ "key": "apikey", "display": "Api Key" }],
+  "display": "Latex Ocr",
+  "homepage": "https://github.com/MosRat/pot-app-recognize-plugin-latex-ocr",
+  "needs": [
+    {
+      "key": "apikey",
+      "display": "Api Key",
+      "type": "input"
+    }
+  ],
   "language": {
     "auto": "",
     "zh_cn": "",
